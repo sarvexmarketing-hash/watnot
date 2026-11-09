@@ -93,7 +93,7 @@ export const projects: Project[] = [
     headline: "Sustainable energy platform built for search visibility and trust.",
     description:
       "Complete brand transformation with end-to-end SEO hierarchy, custom clean-energy calculator widgets, and an ultra-modern champagne & charcoal design system.",
-    image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=1600&auto=format&fit=crop",
+    image: "/images/solar.jpg",
     tags: ["Web Design", "SEO Strategy", "Analytics", "CMS"],
     deliverables: [
       "Full Technical SEO Audit",
