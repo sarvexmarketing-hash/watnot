@@ -36,14 +36,14 @@ export default function About({ onOpenContact }: AboutProps) {
         </motion.div>
       </div>
 
-      {/* Center Moody Portrait with WebGL Dither Reveal */}
+      {/* Center Digital Craft Showcase with WebGL Dither Reveal */}
       <div className="relative -mt-16 sm:-mt-24 md:-mt-36 z-10 max-w-lg md:max-w-xl lg:max-w-2xl mx-auto px-6 flex justify-center">
-        <div className="relative w-72 sm:w-88 md:w-[440px] aspect-[4/5] overflow-hidden group cursor-crosshair">
+        <div className="relative w-72 sm:w-88 md:w-[440px] aspect-[4/5] rounded-2xl overflow-hidden group cursor-crosshair border border-[#343230]/60 shadow-2xl shadow-black/80">
           {/* WebGL Interactive Dither Shader */}
           <DitherReveal
-            image="/images/watnot-portrait.png"
+            image="/images/hands-bg.jpg"
             fit="cover"
-            focusY={45}
+            focusY={50}
             ditherStyle="bayer8"
             dotSize={4}
             revealRadius={120}
@@ -54,7 +54,7 @@ export default function About({ onOpenContact }: AboutProps) {
           />
 
           {/* Vignette overlays to blend edges seamlessly into the #0E0E0E background */}
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent opacity-90" />
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent opacity-85" />
           <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#0E0E0E]/40 via-transparent to-transparent" />
           <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#0E0E0E]/50 via-transparent to-[#0E0E0E]/50" />
         </div>
