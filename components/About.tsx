@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import DitherReveal from "./DitherReveal";
+import HeroBrowserMockup from "./HeroBrowserMockup";
 
 interface AboutProps {
   onOpenContact: () => void;
@@ -36,28 +36,9 @@ export default function About({ onOpenContact }: AboutProps) {
         </motion.div>
       </div>
 
-      {/* Center Digital Craft Showcase with WebGL Dither Reveal */}
-      <div className="relative -mt-16 sm:-mt-24 md:-mt-36 z-10 max-w-lg md:max-w-xl lg:max-w-2xl mx-auto px-6 flex justify-center">
-        <div className="relative w-72 sm:w-88 md:w-[440px] aspect-[4/5] rounded-2xl overflow-hidden group cursor-crosshair border border-[#343230]/60 shadow-2xl shadow-black/80">
-          {/* WebGL Interactive Dither Shader */}
-          <DitherReveal
-            image="/images/hands-bg.jpg"
-            fit="cover"
-            focusY={50}
-            ditherStyle="bayer8"
-            dotSize={4}
-            revealRadius={120}
-            revealSoftness={60}
-            wave={true}
-            waveSpeed={75}
-            waveDensity={25}
-          />
-
-          {/* Vignette overlays to blend edges seamlessly into the #0E0E0E background */}
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent opacity-85" />
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#0E0E0E]/40 via-transparent to-transparent" />
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#0E0E0E]/50 via-transparent to-[#0E0E0E]/50" />
-        </div>
+      {/* Centerpiece: Interactive 3D Agency Website Mockup */}
+      <div className="relative -mt-12 sm:-mt-20 md:-mt-28 z-20 max-w-5xl mx-auto px-4 sm:px-6">
+        <HeroBrowserMockup />
       </div>
 
       {/* Editorial Text Row: Split Left & Right Columns */}
