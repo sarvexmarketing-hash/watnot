@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import LiquidSmoke from "./LiquidSmoke";
 
 interface HeroProps {
   onExploreServices: () => void;
@@ -99,25 +98,24 @@ export default function Hero({ onExploreServices, onOpenContact }: HeroProps) {
 
   return (
     <section className="relative min-h-screen pt-28 pb-10 md:pt-36 md:pb-12 flex flex-col justify-between overflow-hidden">
-      {/* ✦ Interactive WebGL Liquid Smoke Simulation (aidesigner.ai) ✦ */}
-      <LiquidSmoke
-        colors={["#475569", "#94a3b8", "#334155"]}
-        backgroundColor="#0E0E0E"
-        speed={0.35}
-        scale={1.4}
-        warp={0.85}
-        rise={0.4}
-        swirl={0.5}
-        contrast={1.2}
-        softness={0.72}
-        mouseStrength={0.75}
-        bgAlpha={1.0}
-        className="absolute inset-0 z-0 pointer-events-none"
-      />
+      {/* ✦ 4K Cinematic Background Video ✦ */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover object-center filter brightness-[0.72] contrast-[1.08]"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
 
-      {/* Ambient Dark Overlays for cinematic depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-black/30 pointer-events-none z-[1]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0E0E0E] pointer-events-none z-[1]" />
+        {/* Ambient Dark Overlays to ensure editorial typography stands out with cinematic contrast */}
+        <div className="absolute inset-0 bg-black/45 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-black/50 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-[#0E0E0E] pointer-events-none" />
+      </div>
 
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full flex-1 flex flex-col justify-center relative z-10 pointer-events-none">
