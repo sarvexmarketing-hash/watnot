@@ -144,13 +144,13 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
             })}
           </nav>
 
-          {/* Primary CTA: GET A FREE DEMO */}
+          {/* Primary CTA: TALK WITH US */}
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={onOpenContact}
               className="px-6 py-2.5 rounded-md bg-[#DAC5A7] text-[#0E0E0E] text-xs font-semibold uppercase tracking-[0.18em] hover:bg-white transition-all duration-300 shadow-md shadow-black/20"
             >
-              GET A FREE DEMO
+              TALK WITH US
             </button>
           </div>
 
@@ -259,7 +259,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
                   }}
                   className="w-full py-4 rounded-md bg-[#DAC5A7] text-[#0E0E0E] font-semibold text-xs uppercase tracking-[0.2em] text-center flex items-center justify-center gap-2 hover:bg-white transition-colors"
                 >
-                  <span>GET A FREE DEMO</span>
+                  <span>TALK WITH US</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </motion.div>

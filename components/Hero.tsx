@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
 import LiquidSmoke from "./LiquidSmoke";
 
 interface HeroProps {
@@ -10,7 +10,7 @@ interface HeroProps {
   onOpenContact: () => void;
 }
 
-export default function Hero({ onExploreServices }: HeroProps) {
+export default function Hero({ onExploreServices, onOpenContact }: HeroProps) {
   // Client logos replicating the authentic Framer design in Image 8
   const logos = [
     {
@@ -144,12 +144,12 @@ export default function Hero({ onExploreServices }: HeroProps) {
             Premium Web Design, Development, and SEO services to help your business stand out.
           </motion.p>
 
-          {/* Authentic Framer CTA Button: ( ↓ ) MY SERVICES */}
+          {/* Primary CTA Buttons: MY SERVICES + GET A FREE DEMO */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-8 md:mt-12 flex justify-center pointer-events-auto"
+            className="mt-8 md:mt-12 flex flex-wrap items-center justify-center gap-5 sm:gap-6 pointer-events-auto"
           >
             <button
               onClick={onExploreServices}
@@ -160,6 +160,14 @@ export default function Hero({ onExploreServices }: HeroProps) {
                 <ArrowDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#DAC5A7] group-hover:translate-y-0.5 transition-transform duration-300" />
               </span>
               <span className="tracking-[0.22em]">MY SERVICES</span>
+            </button>
+
+            <button
+              onClick={onOpenContact}
+              className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#DAC5A7] text-[#0E0E0E] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] hover:bg-white transition-all duration-300 shadow-xl shadow-black/40 cursor-pointer"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-[#0E0E0E]" />
+              <span>GET A FREE DEMO</span>
             </button>
           </motion.div>
         </div>
