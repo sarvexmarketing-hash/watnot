@@ -35,3 +35,4 @@ yarn-error.log*
 
 # root redundant raw video (used copy is in public/videos/hero-bg.mp4)
 /12777809_3840_2160_30fps.mp4
+
