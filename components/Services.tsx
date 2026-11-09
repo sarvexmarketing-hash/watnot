@@ -32,7 +32,7 @@ export default function Services({ onSelectService }: ServicesProps) {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="section-headline font-light text-[#DAC5A7]"
             >
-              My Services
+              Services
             </motion.h2>
           </div>
           <motion.p
@@ -42,7 +42,7 @@ export default function Services({ onSelectService }: ServicesProps) {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-sm md:text-base text-[#DAC5A7]/70 max-w-md font-light leading-relaxed"
           >
-            Bespoke design systems, full-stack engineering, organic SEO, social media optimization, and Google visibility to help your brand stand out.
+            Bespoke design systems, full-stack engineering, organic SEO, social media optimization, Google visibility, and CRM automation to scale your brand.
           </motion.p>
         </div>
 

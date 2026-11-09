@@ -89,6 +89,22 @@ export const services: Service[] = [
     ],
     tools: ["Google Maps", "Google Business Profile", "BrightLocal", "Geo-Grid Rank Tracker"],
   },
+  {
+    number: "06",
+    title: "CRM & Automation",
+    tagline: "About CRM & Automation",
+    description:
+      "Streamline operations and scale sales pipelines with intelligent CRM setups, automated lead nurturing, and seamless workflow integrations.",
+    detail:
+      "Custom workflow automations and customer relationship management architecture designed to capture, qualify, and convert leads automatically without manual bottlenecks. We integrate your web touchpoints directly into unified sales pipelines.",
+    features: [
+      "End-to-End CRM Setup & Pipeline Architecture",
+      "Automated Lead Capture & Nurture Sequences",
+      "Multi-App Integrations (Zapier, Make, Webhooks)",
+      "Automated Email, SMS & WhatsApp Notification Flows",
+    ],
+    tools: ["HubSpot", "Zapier", "Make", "GoHighLevel", "Notion", "Airtable"],
+  },
 ];
 
 export interface ProcessStep {
